@@ -10,7 +10,7 @@ El objetivo principal es realizar un análisis exploratorio y aplicar **pruebas 
 ---
 
 ## 💡 Key Business Insights (Conclusiones Clave de Negocio)
-**Plan con Mayor Ingreso Promedio:** El plan **Ultimate** genera un ingreso promedio por usuario significativamente mayor (~$70.00/mes) debido a su cuota fija, en comparación con el plan **Surf** (~$60.00/mes).
+**Plan con Mayor Ingreso Promedio:** El plan **Ultimate** genera un ingreso promedio por usuario significativamente mayor (aprox $70.00/mes) debido a su cuota fija, en comparación con el plan **Surf** (aprox $60.00/mes).
 - **Patrón de Excedentes en Surf:** Pese a su tarifa base de $20/mes, los usuarios del plan Surf superan de forma recurrente el límite de 15 GB incluidos. Los cobros marginales por GB extra ($10/GB) representan la mayor parte del ingreso adicional generado por este plan.
 - **Comportamiento en Ultimate:** Los usuarios del plan Ultimate raramente exceden sus límites (30 GB, 3000 min, 1000 SMS), pagando casi exclusivamente la cuota mensual fija.
 - **Prueba de Hipótesis 1 (Planes):** Se **rechazó $H_0$** ($p < 0.05$). Existe una diferencia estadísticamente significativa en los ingresos promedio entre los clientes del plan Surf y los del plan Ultimate.
