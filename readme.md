@@ -1,4 +1,6 @@
-# 📊 Análisis MarTech & Telecom: Evaluación de Monetización y Comportamiento de Usuarios (Megaline)
+# 📊 Megaline: Análisis Estadístico y Optimización de Ingresos por Tarifas de Telecomunicaciones
+
+> **Evaluación exploratoria y pruebas de hipótesis para la asignación estratégica del presupuesto publicitario entre los planes Surf y Ultimate.**
 
 ## 📌 Resumen del Proyecto y Objetivo de Negocio
 El departamento comercial de **Megaline** necesita optimizar la asignación del presupuesto publicitario entre sus dos tarifas de prepago: **Surf** y **Ultimate**. 
