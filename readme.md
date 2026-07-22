@@ -8,11 +8,37 @@ El objetivo principal es realizar un análisis exploratorio y aplicar **pruebas 
 ---
 
 ## 💡 Key Business Insights (Conclusiones Clave de Negocio)
-- **Tarifa más rentable:** El plan **Surf** genera mayores ingresos excedentes debido a que el 68% de sus usuarios supera con frecuencia el límite de MB incluidos.
-- **Patrón de consumo:** Los usuarios del plan Ultimate raramente sobrepasan sus límites de minutos y SMS, pagando principalmente la tarifa base ($70/mes).
-- **Hipótesis Estadística:** Se rechazó / No se rechazó la hipótesis nula ($p < 0.05$). Existe una diferencia estadísticamente significativa entre los ingresos promedio de ambos planes.
+**Plan con Mayor Ingreso Promedio:** El plan **Ultimate** genera un ingreso promedio por usuario significativamente mayor (~$70.00/mes) debido a su cuota fija, en comparación con el plan **Surf** (~$60.00/mes).
+- **Patrón de Excedentes en Surf:** Pese a su tarifa base de $20/mes, los usuarios del plan Surf superan de forma recurrente el límite de 15 GB incluidos. Los cobros marginales por GB extra ($10/GB) representan la mayor parte del ingreso adicional generado por este plan.
+- **Comportamiento en Ultimate:** Los usuarios del plan Ultimate raramente exceden sus límites (30 GB, 3000 min, 1000 SMS), pagando casi exclusivamente la cuota mensual fija.
+- **Prueba de Hipótesis 1 (Planes):** Se **rechazó $H_0$** ($p < 0.05$). Existe una diferencia estadísticamente significativa en los ingresos promedio entre los clientes del plan Surf y los del plan Ultimate.
+- **Prueba de Hipótesis 2 (Regiones):** **No se rechazó $H_0$** ($p > 0.05$). No existe evidencia estadística de una diferencia en el ingreso promedio entre los usuarios del área metropolitana de NY-NJ ($63.37) y los de otras regiones ($64.64). La ubicación geográfica no afecta el rendimiento financiero de los usuarios.
 
 ---
+## 🎯 Recomendaciones Estratégicas para el Negocio
+
+Con base en el análisis exploratorio y las pruebas de hipótesis realizadas, se sugiere al departamento comercial y de marketing de Megaline implementar las siguientes acciones:
+
+### 1. Reasignación del Presupuesto Publicitario (Marketing ROI)
+* **Priorizar la captación en el plan Ultimate:** Dado que la prueba de hipótesis confirmó que el plan **Ultimate** genera un ingreso promedio significativamente mayor y más estable (~$70.00/mes frente a los ~$60.00/mes de Surf), se recomienda destinar la mayor parte del presupuesto de adquisición de usuarios (ej. 60%-65%) a promocionar el plan Ultimate.
+* **Mensaje de campaña centrado en "Tranquilidad y Cero Sorpresas":** Los usuarios de Ultimate raramente exceden sus límites. La publicidad debe posicionar a Ultimate como la opción *premium* donde el cliente no tiene que preocuparse por cargos sorpresa en su factura al final del mes.
+
+### 2. Estrategia de Monetización y Retención para el Plan Surf
+* **Estrategia de Upselling Gradual:** Un alto porcentaje de usuarios del plan Surf excede el límite de 15 GB y termina pagando facturas de $50, $60 o más debido a los cargos adicionales por GB ($10/GB). Megaline debe identificar a los usuarios de Surf que llevan 2 o 3 meses consecutivos pagando más de $60/mes y enviarles ofertas personalizadas para migrar a Ultimate ("*Por solo $10 más, obtén el doble de GB y elimina los cobros extra*").
+* **Mitigación de Churn (Fuga de Clientes):** Los cobros imprevistos por excedentes de datos suelen causar insatisfacción. Implementar alertas de consumo cuando el usuario de Surf llegue al 80% y 100% de su cuota de datos ayudará a reducir cancelaciones y fricción comercial.
+
+### 3. Estrategia Geográfica Unificada
+* **Campañas Nacionales sin Segmentación Regional:** La segunda prueba de hipótesis demostró que no existe una diferencia estadísticamente significativa entre los ingresos del área metropolitana de NY-NJ ($63.37) y el resto del país ($64.64).
+* **Optimización de Costos Publicitarios:** No se justifica pagar costos por clic (CPC) o impresiones más caras en el área metropolitana de NY-NJ bajo la expectativa de que generarán mayor valor. La pauta publicitaria debe optimizarse por perfil de cliente e intención de consumo, no por ubicación geográfica.
+
+---
+
+### 📈 Resumen del Impacto Esperado (KPIs)
+| Acción Propuesta | KPI a Impactar | Resultado Esperado |
+| :--- | :--- | :--- |
+| **Enfoque publicitario en Ultimate** | *ARPU* (Ingreso Promedio por Usuario) | Incremento en el ingreso base recurrente de la empresa. |
+| **Upselling Surf $\rightarrow$ Ultimate** | *LTV* & *Retention Rate* | Reducción del churn por facturación imprevista y mayor lealtad. |
+| **Pauta geográfica unificada** | *CAC* (Costo de Adquisición de Cliente) | Reducción en el costo de pauta publicitaria al evitar pujas de CPC caras en NY-NJ. |
 
 ## 🛠️ Stack Tecnológico y Metodología
 - **Lenguaje:** Python 3.10+
